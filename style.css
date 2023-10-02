@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:wght@300&family=Ubuntu:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header {
+  width: max-content;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(4, 4, 52);
+  color: white;
+  row-gap: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  gap: 30px;
+  padding-top: 20px;
+  font-family: "Audiowide", cursive;
+}
+
+.topHeader h2 {
+  font-size: 2rem;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3px;
+  margin-left: 10px;
+}
+
+.topHeader h2 span {
+  background: red;
+  padding: 1px 3px;
+  border-radius: 5px;
+  font-size: 20px;
+  height: auto;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.topHeader input[type="search"] {
+  height: 30px;
+  width: 50%;
+  padding-left: 20px;
+  font-weight: 800;
+  outline: none;
+  border-radius: 20px;
+  border-color: cyan;
+}
+
+.topHeader .btn-search {
+  height: 30px;
+  width: 20%;
+  padding-left: 20px;
+  font-weight: 800;
+  outline: none;
+  border-radius: 20px;
+  border-color: cyan;
+  margin-right: 20px;
+}
+
+.topHeader .btn-search:hover {
+  background: rgb(228, 10, 10);
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  width: 90%;
+  margin: 20px auto;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.container .box {
+  height: 350px;
+  border-radius: 10px;
+  border-color: aqua;
+  background: red;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  color: white;
+  width: 200px;
+  margin-left: 85px;
+}
+
+.container .box:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.container .moviesDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 12px;
+}
+.leftDetails {
+  font-family: "sofia", sans-serif;
+  width: 140px;
+  padding-left: 15px;
+}
+
+.leftDetails h5,
+.leftDetails p {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+img {
+  margin-top: 10px;
+  height: 250px;
+  width: 180px;
+  border-radius: 5px;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+i {
+  visibility: hidden;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-color: rgb(8, 2, 36);
+    color: white;
+  }
+  header {
+    background: #000;
+  }
+  header nav {
+    display: none;
+  }
+  .topHeader {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .topHeader input[type="search"] {
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+  }
+  .topHeader .btn-search {
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    border-color: cyan;
+  }
+  img {
+    border: 1px solid white;
+  }
+  button {
+    padding: 3px 5px;
+    font-size: 20px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  i {
+    visibility: visible;
+    position: absolute;
+    top: 26px;
+    right: 12px;
+    font-size: 26x;
+    height: 30px;
+    width: 30px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .show {
+    display: block;
+    background: white;
+    color: white;
+    border-radius: 5px;
+    margin-top: 125px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 570px) {
+  footer div ul {
+    display: block;
+  }
+}
